@@ -45,9 +45,10 @@ a {
 .bg-container {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/fixing.svg');
   background-position: bottom right;
-  background-size: cover;
   background-repeat: no-repeat;
   color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
 }
 
 /* =========================HEADER============================ */
@@ -136,8 +137,8 @@ header {
 
 .big-img-intro {
   text-align: center;
-  padding-top: 40vh;
-  padding-bottom: 40vh;
+  margin: 40vh 0;
+
 }
 
 .big-img-intro p {
@@ -259,14 +260,10 @@ footer {
   }
 
   @media (min-width: 600px) {
-    .skills,
-    .about-container p {
-      margin: 5vh auto;
-      max-width: 450px;
-    }
 
     .bg-container {
-      background-size: auto;
+      background-size: contain;
+      max-block-size: 100vw;
     }
 
     nav {
@@ -287,11 +284,18 @@ footer {
     .big-img-intro {
       max-width: 450px;
       margin-left: 8vw;
+      margin-top: 20vh;
       text-align: left;
     }
 
     .big-img-intro p {
       margin-left: 0vw;
+    }
+
+    .skills,
+    .about-container p {
+      margin: 5vh auto;
+      max-width: 450px;
     }
 
     footer {
@@ -302,6 +306,11 @@ footer {
   }
 
   @media (min-width: 900px) {
+
+
+    .big-img-intro {
+      margin-top: 25vh;
+    }
 
     header {
       flex-direction: row;
@@ -322,7 +331,10 @@ footer {
   }
 
   @media (min-width: 1200px) {
-
+    .big-img-intro {
+      margin-top: 40vh;
+    }
+ 
   }
 
   @media (min-width: 1800px) {
