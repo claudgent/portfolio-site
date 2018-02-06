@@ -45,10 +45,11 @@ a {
 .bg-container {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/fixing.svg');
   background-position: bottom right;
+  background-size: cover;
   background-repeat: no-repeat;
   color: whitesmoke;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 /* =========================HEADER============================ */
@@ -136,9 +137,8 @@ header {
 /* =========================IMAGE TEXT======================== */
 
 .big-img-intro {
+  margin: 40vh auto;
   text-align: center;
-  margin: 40vh 0;
-
 }
 
 .big-img-intro p {
