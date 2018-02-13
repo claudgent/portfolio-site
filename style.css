@@ -46,6 +46,7 @@ a {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/fixing.svg');
   background-position: bottom right;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: whitesmoke;
   height: 100%;
@@ -263,7 +264,7 @@ footer {
 
     .bg-container {
       background-size: contain;
-      max-block-size: 100vw;
+     
     }
 
     nav {
