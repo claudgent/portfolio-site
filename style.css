@@ -48,10 +48,50 @@ a {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  animation: fadeIn;
   color: whitesmoke;
   height: 100%;
   width: 100%;
   }
+
+  /* ========================================================== */
+
+  /* =====================FADE IN ANIMATION==================== */
+
+  .animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+   
+    to {
+      opacity: 1;
+    }
+  }
+   
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+ 
+/* ====================FADE IN ANIMATION====================== */
 
 /* =========================HEADER============================ */
 
