@@ -245,7 +245,11 @@ header {
 
 .contact {
   align-items: center;
-  background:rgba(0, 0, 0, 0.7);
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/phone.svg');
+  background-size: cover;
+  background-position: center left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: white;
   display: flex;
   justify-content: center;
