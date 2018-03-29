@@ -227,15 +227,40 @@ header {
   height: auto;
   margin: 3vh auto;
   padding: 1rem;
+  position: relative;
   text-align: center;
   width: 90%;
-  transition: all .2s ease-in-out;
 }
 
 .project img {
   height: auto;
   max-width: 100%;
-  
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -377,18 +402,13 @@ footer {
     }
     .project {
       width: 40%;
-    }
-    .project:hover {
-      transform: scale(1.2); 
-    }
-    
+    } 
   }
 
   @media (min-width: 1200px) {
     .big-img-intro {
       margin-top: 40vh;
     }
- 
   }
 
   @media (min-width: 1800px) {
