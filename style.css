@@ -31,7 +31,7 @@ p {
 }
 
 a {
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-decoration: none;
 }
 
@@ -122,6 +122,7 @@ header {
 .menu a {
   color: white;
   padding: 8px;
+  transition: ease .3s;
 
 }
 
@@ -256,7 +257,7 @@ header {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 2em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -401,7 +402,7 @@ footer {
       justify-content: space-between;
     }
     .project {
-      width: 40%;
+      width: 45%;
     } 
   }
 
