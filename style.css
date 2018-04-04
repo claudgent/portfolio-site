@@ -301,19 +301,21 @@ header {
   margin-bottom: 3vh;
 }
 
-
 .links-list {
   list-style: none;
 }
 
 .links-list a {
+  align-items: center;
+  line-height: 1.5em;
+  display: inline-flex;
   color: white;
-  line-height: 2rem;
   text-decoration: none;
 }
 
 svg {
-  margin: 0 2vw;
+  fill: whitesmoke;
+  margin-right: 1em;
 }
 
 /* =========================================================== */
