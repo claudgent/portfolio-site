@@ -99,7 +99,6 @@ header {
   padding: 2vh 0;
 }
 
-
 .border-line {
   animation: do 2s;
   animation-fill-mode: forwards;
@@ -128,6 +127,7 @@ header {
 
 .menu a:hover {
   background-color: whitesmoke;
+  border-radius: 2px;
   color: black;
 
 }
@@ -160,12 +160,12 @@ header {
 
 /* ========================ABOUT ME=========================== */
 
-.about-container {
+#about {
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
 
-.about-container p {
+#about p {
   margin: 3vh 3vw;
   text-align: left;
 }
@@ -173,7 +173,7 @@ header {
 /* =========================================================== */
 
 /* =======================SKILLS BOXES======================== */
-.skills-container {
+#skills {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/desk.svg');
   background-size: auto;
   background-position: center;
@@ -188,21 +188,21 @@ header {
   
 }
 
-.skills {
+.skill {
  display: flex;
  align-items: center;
  flex-direction: column;
  margin: 5vh 0;
 }
 
-.skills p {
+.skill p {
   margin-top: 2vh;
   text-align: left;
 }
 
 /* =======================PROJECT IMGS======================== */
 
-.projects-container {
+#projects {
   color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
@@ -210,7 +210,7 @@ header {
  
 }
 
-.projects-container h2 {
+#projects h2 {
   margin-bottom: 3vh; 
 }
 
@@ -284,7 +284,7 @@ header {
 
 /* =======================CONTACT INFO======================== */
 
-.contact {
+#contact {
   align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/phone.svg');
   background-size: contain;
@@ -297,7 +297,7 @@ header {
   flex-direction: column;
 }
 
-.contact h2 {
+#contact h2 {
   margin-bottom: 3vh;
 }
 
@@ -375,12 +375,12 @@ footer {
       margin-left: 0vw;
     }
 
-    .skills-container {
+    #skills {
       background-size: contain;
     }
 
-    .skills,
-    .about-container p {
+    .skill,
+    #about p {
       margin: 5vh auto;
       max-width: 450px;
     }
