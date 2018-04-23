@@ -53,6 +53,7 @@ a {
   background-position: bottom right;
   background-size: cover;
   background-attachment: fixed;
+  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: whitesmoke;
   height: 100%;
@@ -271,6 +272,7 @@ header {
   background-size: auto;
   background-position: center;
   background-attachment: fixed;
+  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: whitesmoke;
   height: 100%;
@@ -383,6 +385,7 @@ header {
   background-size: contain;
   background-position: center left;
   background-attachment: fixed;
+  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: white;
   display: flex;
