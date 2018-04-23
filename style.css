@@ -238,7 +238,7 @@ header {
 /* =========================IMAGE TEXT======================== */
 
 .big-img-intro {
-  margin: 40vh auto;
+  padding: 40vh 0;
   text-align: center;
 }
 
@@ -459,13 +459,13 @@ footer {
 
     .big-img-intro {
       max-width: 450px;
-      margin-left: 8vw;
-      margin-top: 20vh;
+      padding-left: 8vw;
+      padding-top: 20vh;
       text-align: left;
     }
 
     .big-img-intro p {
-      margin-left: 0;
+      padding-left: 0;
     }
 
     #skills {
@@ -489,7 +489,7 @@ footer {
 
 
     .big-img-intro {
-      margin-top: 25vh;
+      padding-top: 25vh;
     }
 
     header {
@@ -518,7 +518,7 @@ footer {
 
   @media (min-width: 1200px) {
     .big-img-intro {
-      margin-top: 40vh;
+      padding-top: 40vh;
     }
   }
 
