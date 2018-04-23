@@ -2,6 +2,9 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   margin: 0;
@@ -41,52 +44,79 @@ a {
 /* ======================HERO BG IMG========================== */
 
 .bg-container {
+  animation: fadeIn;
+  -moz-animation: fadeIn;
+  -o-animation: fadeIn;
+  -webkit-animation: fadeIn;
+
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/fixing.svg');
   background-position: bottom right;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  animation: fadeIn;
   color: whitesmoke;
   height: 100%;
   width: 100%;
-  }
+}
 
   /* ========================================================== */
 
   /* =====================FADE IN ANIMATION==================== */
 
   .animate {
-    -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
     animation-fill-mode: both;
-    -webkit-animation-delay: 1s;
+    -o-animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+
     animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
   }
 
-  @-webkit-keyframes fadeIn {
+  @keyframes fadeIn {
     from {
       opacity: 0;
-    }
-   
+    } 
     to {
       opacity: 1;
     }
   }
-  @keyframes fadeIn {
+  @-moz-keyframes fadeIn {
     from {
       opacity: 0;
     }
-   
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    from {
+      opacity: 0;
+    } 
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
     to {
       opacity: 1;
     }
   }
    
   .fadeIn {
-    -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
   }
 
 /* =========================HEADER============================ */
@@ -435,7 +465,7 @@ footer {
     }
 
     .big-img-intro p {
-      margin-left: 0vw;
+      margin-left: 0;
     }
 
     #skills {
