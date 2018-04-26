@@ -44,7 +44,6 @@ a {
 /* ======================HERO BG IMG========================== */
 
 .bg-container {
-
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('svg/fixing.svg');
   background-position: bottom right;
   background-size: cover;
@@ -278,10 +277,10 @@ header {
 }
 
 .skill {
- display: flex;
- align-items: center;
- flex-direction: column;
- margin: 5vh 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
 }
 
 .skill p {
