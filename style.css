@@ -53,11 +53,11 @@ a {
   background-position: bottom right;
   background-size: cover;
   background-attachment: fixed;
-  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: whitesmoke;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
   /* ========================================================== */
@@ -272,7 +272,6 @@ header {
   background-size: auto;
   background-position: center;
   background-attachment: fixed;
-  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: whitesmoke;
   height: 100%;
@@ -385,7 +384,6 @@ header {
   background-size: contain;
   background-position: center left;
   background-attachment: fixed;
-  webkit-backface-visibility: hidden;
   background-repeat: no-repeat;
   color: white;
   display: flex;
@@ -460,15 +458,16 @@ footer {
     }
 
     .big-img-intro {
-      max-width: 450px;
+      max-width: 50vw;
       padding-left: 8vw;
       padding-top: 20vh;
       text-align: left;
     }
 
     .big-img-intro p {
-      padding-left: 0;
+      margin: 2vh 0;
     }
+    
 
     #skills {
       background-size: contain;
@@ -496,7 +495,7 @@ footer {
 
     header {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
     }
 
     .name {
