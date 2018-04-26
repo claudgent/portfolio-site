@@ -249,8 +249,9 @@ header {
 /* ========================ABOUT ME=========================== */
 
 #about {
-  text-align: center;
+  background-color: whitesmoke;
   color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 #about p {
@@ -291,11 +292,11 @@ header {
 /* =======================PROJECT IMGS======================== */
 
 #projects {
+  background-color: whitesmoke;
   color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center; /* align vertical */
- 
 }
 
 #projects h2 {
@@ -303,7 +304,7 @@ header {
 }
 
 .gallery {
-  align-items: stretch;
+  align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -312,23 +313,13 @@ header {
 
 .project {
   background-color: whitesmoke;
-  border: grey .5px solid;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 100%;
-  width: 100%;
-  margin: 3vh auto;
-  padding: 1rem;
   text-align: center;
-}
-
-.project a {
-  color:  rgba(0, 0, 0, 0.7);
 }
 
 .img-container {
   background-size: 100%;
   background-repeat: no-repeat;
-  padding-top: 50%;
+  padding-top: 55%;
   position: relative;
   width: 100%;
 }
@@ -470,7 +461,7 @@ footer {
     .skill,
     #about p {
       margin: 5vh auto;
-      max-width: 450px;
+      max-width: 500px;
     }
 
     footer {
@@ -501,13 +492,8 @@ footer {
       justify-self: right;
       width: 30vw;
     }
-
-    .gallery {
-      flex-direction: row;
-      justify-content: space-between;
-    }
     .project {
-      width: 45%;
+      width: 80%;
     } 
   }
 
