@@ -374,13 +374,22 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;
+  text-align: center;
+}
+
+.contact-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
+  text-align: justify;
 }
 
 #contact h2 {
   margin-bottom: 3vh;
+}
+
+.contact-container h3 {
+  margin: 3vh 0;
 }
 
 .links-list {
@@ -465,6 +474,10 @@ footer {
     #about p {
       margin: 5vh auto;
       max-width: 500px;
+    }
+
+    .contact-container {
+      flex-direction: row;
     }
 
     footer {
