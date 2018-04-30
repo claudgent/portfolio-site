@@ -313,7 +313,11 @@ header {
 
 .project {
   background-color: whitesmoke;
+  box-shadow: 0 0 20px #aaa;
+  height: auto;
+  margin: 10px;
   text-align: center;
+  width: 100%;
 }
 
 .img-container {
@@ -321,7 +325,6 @@ header {
   background-repeat: no-repeat;
   padding-top: 55%;
   position: relative;
-  width: 100%;
 }
 
 #project-1 .img-container {
@@ -467,7 +470,6 @@ footer {
     footer {
       align-items: center;
     }
-
 
   }
 
