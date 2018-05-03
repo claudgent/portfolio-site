@@ -328,11 +328,11 @@ header {
 }
 
 #project-1 .img-container {
-  background-image: url('img/claudiotiles.png');
+  background-image: url('img/claudiotiles.jpg');
 }
 
 #project-2 .img-container {
-  background-image: url('img/pengo.png');
+  background-image: url('img/pengo.jpg');
 }
 
 .project:hover .overlay {
