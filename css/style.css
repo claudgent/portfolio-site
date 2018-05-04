@@ -44,7 +44,7 @@ a {
 /* ======================HERO BG IMG========================== */
 
 .bg-container {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/fixing.svg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/fixing.svg');
   background-position: bottom right;
   background-size: cover;
   background-attachment: fixed;
@@ -263,7 +263,7 @@ header {
 
 /* =======================SKILLS BOXES======================== */
 #skills {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/desk.svg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/desk.svg');
   background-size: auto;
   background-position: center;
   background-attachment: fixed;
@@ -328,11 +328,11 @@ header {
 }
 
 #project-1 .img-container {
-  background-image: url('img/claudiotiles.jpg');
+  background-image: url('../img/claudiotiles.jpg');
 }
 
 #project-2 .img-container {
-  background-image: url('img/pengo.jpg');
+  background-image: url('../img/pengo.jpg');
 }
 
 .project:hover .overlay {
@@ -368,7 +368,7 @@ header {
 
 #contact {
   align-items: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('img/phone.svg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/phone.svg');
   background-size: contain;
   background-position: center left;
   background-attachment: fixed;
