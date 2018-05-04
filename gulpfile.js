@@ -1,6 +1,8 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
 
-gulp.task('default', function() {
-  // place code for your default task here
-  console.log("Hello Claudio");
-});
+gulp.task('Image Optimization', () =>
+	gulp.src('img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('img'))
+);
