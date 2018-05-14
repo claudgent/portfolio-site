@@ -353,12 +353,20 @@ header {
 }
 
 .text {
-  color: white;
-  font-size: 1.5em;
+  color: whitesmoke;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text a {
+  color: white;
+  font-size: 1.6em;
+}
+
+.text h4 {
+  margin-top: 5px;
 }
 
 
