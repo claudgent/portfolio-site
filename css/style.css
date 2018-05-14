@@ -14,7 +14,7 @@
 h1,
 h2,
 h3 {
-font-family:'Lora', serif;
+  font-family:'Lora', serif;
 }
 
 h1 {
@@ -22,7 +22,8 @@ h1 {
 }
  
 h2 {
-font-size: 1.7em;
+  font-size: 1.7em;
+  padding-bottom: 50px;
 }
 
 h3 {
@@ -255,7 +256,7 @@ header {
 }
 
 #about p {
-  margin: 3vh 3vw;
+  margin: 0 3vh;
   text-align: left;
 }
 
@@ -281,7 +282,10 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 4vh;
+}
+
+.skill:first-of-type {
+  padding-bottom: 5vh;
 }
 
 .skill p {
@@ -297,10 +301,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; /* align vertical */
-}
-
-#projects h2 {
-  margin-bottom: 3vh; 
 }
 
 .gallery {
@@ -365,7 +365,8 @@ header {
   font-size: 1.6em;
 }
 
-.text h4 {
+.text p {
+  font-size: 1.4em;
   margin-top: 5px;
 }
 
@@ -390,10 +391,6 @@ header {
   justify-content: space-evenly;
   flex-direction: column;
   text-align: justify;
-}
-
-#contact h2 {
-  margin-bottom: 3vh;
 }
 
 .contact-container h3 {
@@ -480,7 +477,7 @@ footer {
 
     .skill,
     #about p {
-      margin: 5vh auto;
+      margin: 0 auto;
       max-width: 500px;
     }
 
@@ -515,9 +512,18 @@ footer {
       justify-self: right;
       width: 30vw;
     }
+
     .project {
       width: 80%;
     } 
+
+    .text a {
+      font-size: 1.8em;
+    }
+    
+    .text p {
+      font-size: 1.6;
+    }
   }
 
   @media (min-width: 1200px) {
