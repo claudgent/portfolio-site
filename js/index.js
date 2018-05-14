@@ -1,13 +1,12 @@
-function pageScroll($) {
-  // jQuery for page scrolling feature
-  $('.scroll').on('click', (event) => {
-    const $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top),
-    }, 1000, 'easeInOutCirc');
-    event.preventDefault();
-  });
-}
+
+// jQuery for page scrolling feature
+$('.scroll').on('click', function (event) {
+  const $anchor = $(this);
+  $('html, body').stop().animate({
+    scrollTop: ($($anchor.attr('href')).offset().top),
+  }, 1000, 'easeInOutCirc');
+  event.preventDefault();
+});
 
 // start hamburger menu animation
 function changeShape(x) {
@@ -24,5 +23,3 @@ function dropDown(x) {
   showMenuContent();
   changeShape(x);
 }
-
-pageScroll(jQuery);
