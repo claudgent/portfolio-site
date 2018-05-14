@@ -130,13 +130,16 @@ header {
   font-size: 1.5em;
 }
 
-.border-line {
-  animation: extend 2s;
-  animation-fill-mode: forwards;
+#top-border{
   border-bottom: solid 1px white;
   content: "";
   transform: scaleX(0);
   width: 100%;
+}
+
+.grow-border {
+  animation: extend 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes extend {
@@ -520,7 +523,7 @@ footer {
     .text a {
       font-size: 1.8em;
     }
-    
+
     .text p {
       font-size: 1.6;
     }
