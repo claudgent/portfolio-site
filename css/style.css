@@ -130,11 +130,14 @@ header {
   font-size: 1.5em;
 }
 
-#top-border{
+.border {
   border-bottom: solid 1px white;
   content: "";
-  transform: scaleX(0);
   width: 100%;
+}
+
+#top-border {
+  transform: scaleX(0);
 }
 
 .grow-border {
@@ -378,7 +381,7 @@ header {
 
 /* =======================CONTACT INFO======================== */
 
-#contact {
+.contact-footer-bg {
   align-items: center;
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/phone.svg');
   background-size: contain;
@@ -386,6 +389,7 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: white;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -393,10 +397,11 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  margin-bottom: 10vh;
   text-align: justify;
 }
 
-.contact-container h3 {
+.contact-footer-bg h3 {
   margin: 3vh 0;
 }
 
@@ -406,7 +411,7 @@ header {
 
 .links-list a {
   align-items: center;
-  line-height: 1.5em;
+  line-height: 1.8em;
   display: inline-flex;
   color: white;
   text-decoration: none;
@@ -415,23 +420,18 @@ header {
 svg {
   fill: whitesmoke;
   margin-right: 1em;
-  height:1.1rem;
-  width:1.1rem;
+  height: 1.1rem;
+  width: 1.1rem;
 }
 
 /* =========================================================== */
 
 /* =======================FOOTER STYLES======================= */
 
-
-footer {
-  background:rgba(0, 0, 0, 0.7);
+footer span {
   color: white;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2rem;
-  padding: 2vh 4vw;
-  
+  line-height: 2.5rem;
+  margin: 10px;
 }
 
 /* =========================================================== */
@@ -484,6 +484,10 @@ footer {
       max-width: 500px;
     }
 
+    .contact-footer-bg {
+      text-align: center;
+    }
+    
     .contact-container {
       flex-direction: row;
     }
