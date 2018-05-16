@@ -9,24 +9,14 @@ $( () => {
     event.preventDefault();
   });
 
-  // Activate animations after page has loaded
+  // Activate animations classes after page has loaded
 
   $('#top-border').addClass('grow-border');
   $('.animate').addClass('fadeIn');
 
-  // Add Animations for DropDown Menu
-  function changeShape(x) {
-    x.classList.toggle('change');
-  }
-
-  function showMenuContent() {
-    document.getElementById('dropdown-container')
-      .classList
-      .toggle('show');
-  }
-
-  function dropDown(x) {
-    showMenuContent();
-    changeShape(x);
-  }
+  // Toggle animation classes for DropDown Menu
+  $('.dropdown').on('click', (event) => {
+    event.currentTarget.classList.toggle('change');
+    document.getElementById('dropdown-container').classList.toggle('show');
+  });
 });
