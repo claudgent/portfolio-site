@@ -281,21 +281,25 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+}
+
+#skills h2 {
+  padding-bottom: 10px;
 }
 
 .skill {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 
 .skill:first-of-type {
-  padding-bottom: 5vh;
+  padding-bottom: 20vh;
 }
 
 .skill p {
   margin-top: 2vh;
+  font-size: 1.4rem;
   text-align: left;
 }
 
@@ -499,7 +503,9 @@ footer span {
   }
 
   @media (min-width: 900px) {
-
+    * {
+      font-size: 1.05rem;
+    }
 
     .big-img-intro {
       padding-top: 25vh;
@@ -518,6 +524,14 @@ footer span {
     nav {
       justify-self: right;
       width: 30vw;
+    }
+
+    #skills {
+      flex-direction: row;
+    }
+
+    .skill {
+      align-self: baseline;
     }
 
     .project {
