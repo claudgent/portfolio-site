@@ -305,12 +305,16 @@ header {
 
 /* =======================PROJECT IMGS======================== */
 
-#projects {
+#projects, #work {
   background-color: whitesmoke;
   color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
   align-items: center; /* align vertical */
+}
+
+#work {
+  padding-top: 0;
 }
 
 .gallery {
@@ -344,6 +348,15 @@ header {
 #project-2 .img-container {
   background-image: url('../img/pengo.jpg');
 }
+
+#project-3 .img-container {
+  background-image: url('../img/labworthy.png')
+}
+
+#project-4 .img-container {
+  background-image: url('../img/digipops.png')
+}
+
 
 .project:hover .overlay {
   opacity: 1;
