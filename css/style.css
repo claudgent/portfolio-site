@@ -216,18 +216,24 @@ header {
   display: none;
 }
 
-.menu a {
+.menu a, #resume-link {
   color: white;
   padding: 8px;
   transition: ease .3s;
-
 }
 
 .menu a:hover {
   background-color: whitesmoke;
   border-radius: 2px;
   color: black;
-
+}
+#resume-link{
+  border: solid 1px whitesmoke;
+}
+#resume-link:hover {
+  background-color: whitesmoke;
+  border-radius: 2px;
+  color: black;
 }
 
 /* =========================================================== */
